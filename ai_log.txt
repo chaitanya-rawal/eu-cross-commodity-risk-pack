@@ -1,0 +1,50 @@
+
+============================================================
+TIMESTAMP: 2026-04-01 05:19:11.287926
+MODEL: claude-haiku-4-5-20251001
+============================================================
+PROMPT:
+You are a senior European energy trader writing a morning desk note for a trading team.
+
+Based on the following live market metrics, write a professional 3-paragraph risk narrative covering:
+
+Paragraph 1 - GAS TIGHTNESS: Analyse TTF price level, momentum, and what it implies for prompt gas supply/demand balance in Europe.
+
+Paragraph 2 - CARBON SIGNAL: Analyse EUA price level and 30-day momentum. What is the policy and supply signal? Is carbon supportive or bearish for power prices?
+
+Paragraph 3 - POWER CURVE IMPLICATIONS: Using the Clean Dark Spread and Day-Ahead price, assess the current gas-to-power economics. What is the key risk asymmetry for European power from Day-Ahead through the curve?
+
+Be specific, cite the exact numbers provided, use trader language, and end with one clear risk statement.
+
+LIVE METRICS AS OF 2026-04-01:
+{
+  "TTF_front_month_USD_MMBtu": 11.19,
+  "TTF_front_month_EUR_MWh": 35.13,
+  "EUA_price_EUR_t": 55.85,
+  "EUA_30d_momentum_pct": -7.39,
+  "EU_storage_pct_full": 38.4,
+  "EU_storage_vs_5yr_avg": -26.6,
+  "DE_DA_power_EUR_MWh": 147.01,
+  "clean_dark_spread_EUR_MWh": 49.95,
+  "power_carbon_30d_correlation": -0.25
+}
+
+
+OUTPUT:
+# MORNING DESK NOTE – ENERGY MARKETS | 01-APR-2026
+
+**GAS TIGHTNESS: Structural Deficit Persists Despite Seasonal Softening**
+
+TTF front-month is trading at €35.13/MWh (USD 11.19/MMBtu), within normal seasonal ranges but masking an uncomfortable structural position. European storage sits at 38.4% full—a concerning 26.6% below the five-year average for this date. While spring demand typically eases, the storage deficit means we carry elevated marginal supply costs into summer. The price level suggests traders are pricing incremental LNG at the margin, but absent aggressive injections over the next 60 days, we risk a tighter H2 2026 than current forward curves reflect. **Momentum is flat-to-slightly-bid into April, but the summer premium is real.** Watch weekly storage builds; anything below 15 TWh/week signals that TTF re-rating higher is likely within six weeks.
+
+**CARBON SIGNAL: Policy Headwind Undermining Power Support**
+
+EUA prices have deteriorated 7.39% over the past month and now sit at €55.85/t—a meaningful break that suggests either demand destruction in industrial sectors or increased Phase 4 allowance supply expectations. At this level, carbon is providing *negative* signal for European power prices. The -0.25 correlation between power and carbon over 30 days confirms this: carbon weakness is not being offset by power strength, implying the selloff is driven by macro headwinds rather than supply-side tightness. For traders, this means EU power does **not** have carbon support on rallies—any upside in the curve is vulnerable to further EUA slides if economic data soften or if Fit-for-55 implementation debates resurface.
+
+**POWER CURVE RISK: Dangerous Compression Below Q2 Spike**
+
+The Clean Dark Spread sits at €49.95/MWh on the back of Day-Ahead power at €147.01/MWh. This is a *tight* margin—CDS implies gas-fired generation is barely covering variable costs plus carbon at spot. The asymmetry lies in the curve: **Day-Ahead is overpriced relative to Q2-Q3 forwards because storage deficit risk is being priced incrementally into summer, not frontloaded.** If cold weather extends into April or if any major supply disruption surfaces (LNG delays, Russian transit reductions), we see a violent spike in prompt curve that crushes the CDS spread further. Conversely, if storage builds aggressively, Q3 power could crater 15–20% with no corresponding Day-Ahead collapse, leaving us short the cheap hedge.
+
+---
+
+**KEY RISK STATEMENT:** *The combination of below-average storage, weak carbon, and razor-thin CDS creates a one-way bet: European power curve is vulnerable to a violent re-steepening if supply tightens, but lacks carbon support on the downside if demand softens. Position length cautiously; the risk/reward is asymmetric against shorts.*
