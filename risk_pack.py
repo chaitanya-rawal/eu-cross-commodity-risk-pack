@@ -29,7 +29,7 @@ warnings.filterwarnings('ignore')
 # ============================================================
 FRED_KEY = "579a7fb895e141294c6b06d6a0996008"
 GIE_KEY = "09eeed08d17c64abc696e3cb4438e09b"
-ANTHROPIC_KEY = "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"
+ANTHROPIC_KEY = "your_anthropic_api_key_here"
 
 TODAY = datetime.date.today()
 START_DATE = (TODAY - datetime.timedelta(days=90)).strftime('%Y-%m-%d')
